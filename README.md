@@ -1,0 +1,2 @@
+# SistemaGestionAcademica
+Parcial 1

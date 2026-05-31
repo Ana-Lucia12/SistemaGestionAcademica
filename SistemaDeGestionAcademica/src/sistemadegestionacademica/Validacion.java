@@ -14,6 +14,7 @@ import sistemadegestionacademica.DatoInvalidoExcep;
  */
 // valida los datos ingresados por el usuario
 public class Validacion {
+    
     // Verifica que un texto no este vacio
     public static void validarTexto(String texto)
             throws DatoInvalidoExcep {

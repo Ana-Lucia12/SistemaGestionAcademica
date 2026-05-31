@@ -130,7 +130,7 @@ public class SistemaDeGestionAcademica {
                         for (Persona p: personas) {
                             System.out.println("Nombre: " + p.getNombre());
                             
-                            System.out.println("Identificacion: "+ p.getId));
+                            System.out.println("Identificacion: "+ p.getId());
                             
                             System.out.println("-------");
                         }                   

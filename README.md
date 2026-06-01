@@ -59,3 +59,7 @@ Durante el desarrollo del proyecto se aplicaron los siguientes conceptos:
 ## Resumen del aporte realizado por cada integrante
 
 - Ana Lucia Vargas: desarrollo del menú principal del sistema, registro de estudiantes y docentes, implementación de validaciones de entrada, manejo de excepciones (try-catch y excepción personalizada), búsqueda de personas por identificación y uso de ArrayList con polimorfismo.
+  
+- Verónica Isabel Amador Miranda: Participó en el desarrollo de la estructura base del sistema, creando las clases Persona y Direccion, la enumeración TipoPersona y la clase Utilidades. Además, implementó los atributos, constructores, getters, setters, la constante PAIS y la relación de composición entre Persona y Direccion.
+
+- Yariela Julieth Matarrita Arias: Participó en la implementación de la herencia del sistema mediante la creación de las clases Estudiante y Docente, incorporando los atributos específicos de cada una, sus constructores con el uso de super y la relación entre la superclase Persona y sus subclases.

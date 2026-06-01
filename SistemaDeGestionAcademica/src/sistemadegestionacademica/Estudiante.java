@@ -11,21 +11,32 @@ package sistemadegestionacademica;
  */
 
 // Creación de la clase estudiante que hereda de persona
-public class Estudiante extends Persona{
-    public String carrera; // Atributo carrera
-    
-    //Constructor que utiliza super
-    public Estudiante(String nombre, String id, Direccion direccion, String carrera) {
-        super(nombre, id, direccion);
+public class Estudiante extends Persona implements Evaluable {
+
+    private String carrera;
+
+    public Estudiante(String nombre, String identificacion,
+            Direccion direccion, String carrera) {
+
+        super(nombre, identificacion, direccion);
         this.carrera = carrera;
     }
 
-    //Setter y getter
     public String getCarrera() {
         return carrera;
     }
 
     public void setCarrera(String carrera) {
         this.carrera = carrera;
+    }
+
+    @Override
+    public void describirRol() {
+        System.out.println("Soy un estudiante de la carrera de " + carrera);
+    }
+
+    @Override
+    public void evaluar() {
+        System.out.println("El estudiante está siendo evaluado.");
     }
 }

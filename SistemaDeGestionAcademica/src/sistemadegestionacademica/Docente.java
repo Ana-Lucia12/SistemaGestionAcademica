@@ -11,15 +11,17 @@ package sistemadegestionacademica;
  */
 
 //Clase docente heredada de persona
-public class Docente extends Persona{
-    public String especialidad; //Atributo especialidad 
-        
-    //Constructor que utiliza super
-    public Docente(String nombre, String id, Direccion direccion, String especialidad) {
-        super(nombre, id, direccion);
+public class Docente extends Persona {
+
+    private String especialidad;
+
+    public Docente(String nombre, String identificacion,
+            Direccion direccion, String especialidad) {
+
+        super(nombre, identificacion, direccion);
         this.especialidad = especialidad;
     }
-    //Setter y getter
+
     public String getEspecialidad() {
         return especialidad;
     }
@@ -27,6 +29,11 @@ public class Docente extends Persona{
     public void setEspecialidad(String especialidad) {
         this.especialidad = especialidad;
     }
-    
-    
-}
+
+    @Override
+    public void describirRol() {
+        System.out.println("Soy un docente especializado en " + especialidad);
+    }
+} 
+
+

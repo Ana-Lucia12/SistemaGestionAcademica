@@ -11,21 +11,21 @@ package sistemadegestionacademica;
  */
 
 //Clase Persona y sus atributos
-public class Persona {
-    private String nombre;
-    private String id;
-    private Direccion direccion; //Composición
-    
-    private static final String PAIS = "Costa Rica";
+public abstract class Persona {
 
-    //Constructor
-    public Persona(String nombre, String id, Direccion direccion) {
+    private String nombre;
+    private String identificacion;
+    private Direccion direccion;
+
+    public final String PAIS = "Costa Rica";
+
+    public Persona(String nombre, String identificacion, Direccion direccion) {
         this.nombre = nombre;
-        this.id = id;
-        this.direccion = direccion; //Composición
+        this.identificacion = identificacion;
+        this.direccion = direccion;
     }
-    
-    //Setter y getter
+
+    // Getters y Setters
     public String getNombre() {
         return nombre;
     }
@@ -34,24 +34,27 @@ public class Persona {
         this.nombre = nombre;
     }
 
-    public String getId() {
-        return id;
+    public String getIdentificacion() {
+        return identificacion;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setIdentificacion(String identificacion) {
+        this.identificacion = identificacion;
     }
 
-    public Direccion getDirección() {
+    public Direccion getDireccion() {
         return direccion;
     }
 
-    public void setDirección(Direccion direccion) {
+    public void setDireccion(Direccion direccion) {
         this.direccion = direccion;
     }
-    
-    public String getPais() {
-        return PAIS;
+
+    // Método abstracto
+    public abstract void describirRol();
+
+    // Método final
+    public final void mostrarIdentificacion() {
+        System.out.println("Identificación: " + identificacion);
     }
-    
 }

@@ -130,7 +130,7 @@ public class SistemaDeGestionAcademica {
                         for (Persona p: personas) {
                             System.out.println("Nombre: " + p.getNombre());
                             
-                            System.out.println("Identificacion: "+ p.getId());
+                            System.out.println("Identificacion: "+ p.getIdentificacion());
                             
                             System.out.println("-------");
                         }                   
@@ -144,7 +144,7 @@ public class SistemaDeGestionAcademica {
                     boolean encontrado = false;
                     
                     for(Persona p: personas){
-                        if(p.getId().equals(id)){
+                        if(p.getIdentificacion().equals(id)){
                             System.out.println("Persona encontrada: ");
                             System.out.println(p.getNombre());
                             encontrado = true;

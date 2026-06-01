@@ -63,3 +63,5 @@ Durante el desarrollo del proyecto se aplicaron los siguientes conceptos:
 - Verónica Isabel Amador Miranda: Participó en el desarrollo de la estructura base del sistema, creando las clases Persona y Direccion, la enumeración TipoPersona y la clase Utilidades. Además, implementó los atributos, constructores, getters, setters, la constante PAIS y la relación de composición entre Persona y Direccion.
 
 - Yariela Julieth Matarrita Arias: Participó en la implementación de la herencia del sistema mediante la creación de las clases Estudiante y Docente, incorporando los atributos específicos de cada una, sus constructores con el uso de super y la relación entre la superclase Persona y sus subclases.
+
+-  Josue Castillo Gutierrez: En mi parte del proyecto trabajé principalmente polimorfismo, clases abstractas e interfaces, que son temas importantes de Programación Orientada a Objetos en Java. Mi trabajo consistió en hacer que el sistema pudiera manejar distintos tipos de personas de forma más organizada y reutilizable.

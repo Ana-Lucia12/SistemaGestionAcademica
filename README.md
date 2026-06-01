@@ -1,46 +1,40 @@
-# LAB_U2_Herencia_GitHub
+Aporte del Integrante 1: Verónica Isabel Amador Miranda
 
-## Descripción del proyecto
-Sistema de gestión de materiales de biblioteca desarrollado en Java aplicando programación orientada a objetos, herencia, polimorfismo y control de versiones con GitHub.
+Responsable del desarrollo de los componentes base del sistema:
 
-## Integrantes
-- Ana Lucia Vargas
-- Nombre Integrante 1
-- Nombre Integrante 2
-- Nombre Integrante 3
+- Creación de la clase Persona.
 
-## Instrucciones de ejecución
-1. Abrir el proyecto en NetBeans.
-2. Ejecutar la clase `Main.java`.
-3. Utilizar el menú en consola para interactuar con el sistema.
+- Implementación de atributos privados, getters y setters.
 
-## Funcionalidades
-- Agregar libros
-- Agregar revistas
-- Agregar tesis
-- Agregar audiolibros
-- Buscar materiales
-- Prestar materiales
-- Devolver materiales
-- Mostrar total de materiales registrados
+- Declaración de la constante PAIS.
 
-## Evidencias del uso de herencia
-El proyecto utiliza una superclase abstracta llamada `Material`, de la cual heredan las siguientes subclases:
+- Uso de la palabra reservada this en constructores y métodos.
 
-- Libro
-- Revista
-- Tesis
-- Audiolibro
+- Creación de la clase Direccion.
 
-Conceptos aplicados:
-- Uso de `extends`
-- Uso de `super`
-- Sobrescritura del método `mostrarInfo()`
-- Polimorfismo
-- Encapsulación
-- Miembros `static` y `final`
+- Aplicación de composición mediante la relación entre Persona y Direccion.
 
-## Tecnologías utilizadas
-- Java
-- NetBeans
-- Git y GitHub
+- Creación de la enumeración TipoPersona.
+
+- Desarrollo de la clase Utilidades con un método estático de bienvenida.
+
+
+Aporte del Integrante 2: Yariela Julieth Matarrita Arias
+
+Responsable de la implementación de la herencia dentro del sistema:
+
+- Creación de la clase Estudiante heredando de Persona.
+
+- Implementación del atributo carrera.
+
+- Creación del constructor utilizando la palabra reservada super.
+
+- Creación de la clase Docente heredando de Persona.
+
+- Implementación del atributo especialidad.
+
+- Desarrollo de constructores para las subclases.
+
+- Demostración de la relación entre la superclase Persona y las subclases Estudiante y Docente.
+  
+-Preparación de la estructura necesaria para la implementación de métodos sobrescritos y polimorfismo en etapas posteriores del proyecto.
